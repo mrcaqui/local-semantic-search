@@ -1,0 +1,13 @@
+[project]
+name = "local-semantic-search"
+version = "0.2.0"
+requires-python = ">=3.12"
+dependencies = [
+    # 6.1.0 未満は複数モダリティ入力の順序を無視する(公式 config_sentence_transformers.json の requirements)
+    "sentence-transformers[image]>=6.1.0",
+    # 公式チェックポイントは transformers 5.18.0.dev0 で保存されている。リリース版での読み込みは段階0で確認
+    "transformers>=5.19.0",
+]
+
+[tool.uv]
+package = false

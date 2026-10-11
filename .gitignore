@@ -1,0 +1,4 @@
+.venv/
+.hf-home/
+data/
+__pycache__/
